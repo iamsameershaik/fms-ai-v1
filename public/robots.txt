@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://falconmind.solutions/sitemap.xml
+
+# This configuration:
+# - Allows all web crawlers and bots to access your entire website
+# - Specifies the location of your sitemap
+# - Uses standard robots.txt syntax for maximum compatibility
