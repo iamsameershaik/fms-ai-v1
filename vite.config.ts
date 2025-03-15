@@ -12,4 +12,19 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+    sourcemap: true,
+  },
+  server: {
+    headers: {
+      'Cache-Control': 'no-store',
+    },
+  },
 });
